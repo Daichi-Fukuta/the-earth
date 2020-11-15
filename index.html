@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP&display=swap" rel="stylesheet">
+    <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/vendor/modernizr.custom.min.js"></script>
+    <script src="./js/vendor/jquery-1.10.2.min.js"></script>
+    <script src="./js/vendor/jquery-ui-1.10.3.custom.min.js"></script>
+    <script src="./js/vendor/jquery.ba-throttle-debounce.min.js"></script>
+    <script src="./js/vendor/jquery.smooth-scroll.min.js"></script>
+    <script src="./js/main.js"></script>
+    <title>The Earth</title>
+</head>
+<body>
+    <!-- ヘッダー -->
+    <header class="header">
+        <div class="header__inner">
+            <div class="header__cat">
+                <div class="header__logo">
+                    The Earth
+                </div>
+                <input type="checkbox" id="hamburger" class="header__hamburger-input">
+                <label for="hamburger" class="header__hamburger-label">
+                    <span class="header__hamburger-icon">
+                        <i class="header__hamburger-parts"></i>
+                        <i class="header__hamburger-parts"></i>
+                        <i class="header__hamburger-parts"></i>
+                    </span>
+                </label>
+                <nav class="header-nav">
+                    <ul class="header-nav__list">
+                        <li class="header-nav__item"><a href="#"><span>xxxxxx</span></a></li>
+                        <li class="header-nav__item"><a href="#"><span>xxxxxx</span></a></li>
+                        <li class="header-nav__item"><a href="#"><span>xxxxxx</span></a></li>
+                        <li class="header-nav__item"><a href="#"><span>xxxxxx</span></a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- メインビジュアル(スライドショー) -->
+    <section class="slideshow">
+        <div class="slideshow__inner">
+            <div class="slideshow__slides">
+                <a href="#" class="slide" id="slide-1"><img src="./images/slide-1.jpg"></a>
+                <a href="#" class="slide" id="slide-2"><img src="./images/slide-2.jpg"></a>
+                <a href="#" class="slide" id="slide-3"><img src="./images/slide-3.jpg"></a>
+                <a href="#" class="slide" id="slide-4"><img src="./images/slide-4.jpg"></a>
+                <a href="#" class="slide" id="slide-5"><img src="./images/slide-5.jpg"></a>
+            </div>
+            <div class="slideshow-nav">
+                <a href="#" class="slideshow-nav__prev">
+                    <span class="slideshow-nav__prev-circle"></span>
+                    <span class="slideshow-nav__prev-1 slideshow-nav__arrow"></span>
+                    <span class="slideshow-nav__prev-2 slideshow-nav__arrow"></span>
+                </a>
+                <a href="#" class="slideshow-nav__next">
+                    <span class="slideshow-nav__next-circle"></span>
+                    <span class="slideshow-nav__next-1 slideshow-nav__arrow"></span>
+                    <span class="slideshow-nav__next-2 slideshow-nav__arrow"></span>
+                </a>
+            </div>
+            <div class="slideshow-indicator"></div>
+        </div>
+    </section>
+
+    <!-- スクロールガイド -->
+    <div class="scroll-guide">
+        <p class="scroll-guide__arrow-1">
+            <p class="scroll-guide__arrow-2"></p>
+        </p>
+        <p class="scroll-guide__text">Scroll</p>
+    </div>
+    <!-- 導入 -->
+    <section class="intro">
+        <div class="intro__inner">
+            <div class="intro__cat">
+                <div class="intro__title-wrap">
+                    <h1 class="intro__main-title">奇跡の星、地球</h1>
+                    <div class="intro__sub-title">
+                        <p>積み上げた美しい景色</p>
+                        <p>45億年の月日を経て</p>
+                    </div>
+                </div>
+                <div class="intro__sentence-wrap">
+                    <p class="intro__sentence">
+                        地球が生まれるきっかけは、約50億年前にさかのぼる。宇宙のどこかで、星の大爆発が起こった。これによって、ガスやチリが大きな渦を作り始めた。渦の中心には物質が集まって高温になり、核融合反応というものが起きた。こうして生まれたのが、太陽。<br><br>
+                        一方、ぐるぐるまわっている渦の中では、ガスが冷えてこまかな粒子ができた。<br>
+                        粒子は集まって、やがて微惑星と呼ばれる大きなかたまりになった。微惑星はおたがいに引力で引きつけあって、どんどん大きくなる。これが地球をはじめ、惑星の原型になった。地球は、およそ46億年前にできたと言われている。<br><br>
+                        そして地球には多くの景色がある。海や山、森や草原、そして我々の住む街、ここではそれらを紹介していく。
+                    </p>
+                </div>
+            </div>
+            <div class="intro__img fadein">
+                <img src="./images/intro.jpg" alt="岩山から観える綺麗な星空" title="岩山から観える綺麗な星空">
+            </div>
+        </div>
+    </section>
+
+    <!-- メイン -->
+    <main class="main">
+        <div class="main__inner">
+            <h3 class="main__title fadein">地球の様々な景色を見てみよう</h3>
+            <div class="main__contents fadein">
+                <ul class="main__contents-list">
+                    <li class="main__contents-item fadein">
+                        <div class="main__contents-img">
+                            <img src="./images/main-1.jpg" alt="水中の写真">
+                            <strong>海</strong>
+                            <span></span>
+                        </div>
+                        <button class="main__btn">
+                            詳しく見る
+                            <span class="main__btn-bg"><span>詳しく見る</span></span>
+                        </button>
+                    </li>
+                    <li class="main__contents-item fadein">
+                        <div class="main__contents-img">
+                            <img src="./images/main-2.jpg" alt="険しい山の写真">
+                            <strong>山</strong>
+                            <span></span>
+                        </div>
+                        <button class="main__btn">
+                            詳しく見る
+                            <span class="main__btn-bg"><span>詳しく見る</span></span>
+                        </button>
+                    </li>
+                    <li class="main__contents-item fadein">
+                        <div class="main__contents-img">
+                            <img src="./images/main-3.jpg" alt="森の中の木々の写真">
+                            <strong>森</strong>
+                            <span></span>
+                        </div>
+                        <button class="main__btn">
+                            詳しく見る
+                            <span class="main__btn-bg"><span>詳しく見る</span></span>
+                        </button>
+                    </li>
+                    <li class="main__contents-item fadein">
+                        <div class="main__contents-img">
+                            <img src="./images/main-4.jpg" alt="草原にいる馬数頭の写真">
+                            <strong>草原</strong>
+                            <span></span>
+                        </div>
+                        <button class="main__btn">
+                            詳しく見る
+                            <span class="main__btn-bg"><span>詳しく見る</span></span>
+                        </button>
+                    </li>
+                    <li class="main__contents-item fadein">
+                        <div class="main__contents-img">
+                            <img src="./images/main-5.jpg" alt="現代都市の写真">
+                            <strong>街</strong>
+                            <span></span>
+                        </div>
+                        <button class="main__btn">
+                            詳しく見る
+                            <span class="main__btn-bg"><span>詳しく見る</span></span>
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </main>
+
+    <!-- スムーズスクロール -->
+    <div class="smooth-scroll">
+        <button type="button" class="back-to-top">
+            <i class="fas fa-arrow-alt-circle-up fa-3x"></i>
+        </button>
+        <p class="smooth-scroll__text">ページ先頭へ</p>
+    </div>
+
+    <!-- フッター -->
+    <footer class="footer">
+        <div class="footer__inner">
+            <p class="footer__copy-right">© Daichi</p>
+        </div>
+    </footer>
+</body>
+</html>
