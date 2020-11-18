@@ -516,22 +516,26 @@ main {
     }
 
     .header-nav {
-        display: none;
+        position: absolute;
+        opacity: 0;
+        right: -100%;
+        top: 50px;
+        transition: all .5s;
     }
 
     .header-nav__list {
         display: block;
         width: 100%;
         height: 100%;
-        padding-top: 20px;
     }
-
+    
     .header-nav__item {
         width: 100%;
+        background-color: rgba(0, 0 , 0);
         padding-left: 10px;
-        margin-bottom: 20px;
+        padding-top: 20px;
         font-size: 1.5rem;
-        border-bottom: 1px solid rgba(124, 124, 124, 0.25);
+        border-bottom: 1px solid rgb(255, 255, 255, .25);
     }
 
     .header-nav__item span:after {
@@ -604,11 +608,13 @@ main {
 
     .header__hamburger-input:checked ~ .header-nav {
         display: block;
-        background-color: rgba(0, 0 , 0);
         width: 100vw;
         height: 50%;
+        opacity: 1;
+        right: 0;
+        top: 50px;
     }
-
+    
     /* メインビジュアル
     ================================================== */
     .slideshow-nav__arrow:after {
